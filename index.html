@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour Of DOM(Document Object Model)</title>
     <link rel="stylesheet" href="style/styles.css">
 </head>
+
 <body>
     <header>
         <h1>Welcome to my DOM</h1>
@@ -13,21 +15,21 @@
     <main>
         <section>
             <h1>My awesome DoM Profile</h1>
-        <ul>
-            <li>jalali</li>
-            <li>kalali</li>
-            <li>malali</li>
-            <li>koigeli</li>
-        </ul>
+            <ul>
+                <li>jalali</li>
+                <li>kalali</li>
+                <li>malali</li>
+                <li>koigeli</li>
+            </ul>
         </section>
         <section>
             <h1 id="fruits-title">fruits name</h1>
-        <ul>
-            <li>mango</li>
-            <li>lichu</li>
-            <li>jac-fruits</li>
-            <li>banana</li>
-        </ul>
+            <ul>
+                <li>mango</li>
+                <li>lichu</li>
+                <li>jac-fruits</li>
+                <li>banana</li>
+            </ul>
         </section>
         <section>
             <h1 id="place">my like place</h1>
@@ -36,6 +38,15 @@
                 <li class="place-name">dinajpur</li>
                 <li class="place-name">rangpur</li>
                 <li class="place-name">joypurhat</li>
+            </ul>
+        </section>
+
+        <section class="device-container">
+            <ul>
+                <li>laptop</li>
+                <li>mobile</li>
+                <li>pc</li>
+                <li>tablet</li>
             </ul>
         </section>
     </main>
@@ -48,30 +59,49 @@
     <script>
 
         //akhane js and html er modhe relation stablish kore dom,dom html ke object hisab a rakhe and js diye amr segula kaj korte pari,
-        const h1tag=document.getElementsByTagName('h1');//all h1 tag
+
+        //option--1
+        const h1tag = document.getElementsByTagName('h1');//all h1 tag
         //console.log(h1tag);
 
-        const licollection=document.getElementsByTagName('li');//all li tag collect korbe
-        for(const list of licollection){ //array like object ,not full array
-           // console.log(list);//just show li tag
+        const licollection = document.getElementsByTagName('li');//all li tag collect korbe
+        for (const list of licollection) { //array like object ,not full array
+            // console.log(list);//just show li tag
             //console.log(list.innerText);// show li text 
         }
+        
+//option--2
 
-        const placeName=document.getElementsByClassName('place-name');
-        for(const name of placeName){
-        console.log(name.innerText);
+        const placeName = document.getElementsByClassName('place-name');
+        for (const name of placeName) {
+            //console.log(name.innerText);
         }
 
         // change use js
 
-        const changeName=document.getElementById('place');
-        changeName.innerText='place to place-id';
-        // kono kichu name change kora jay us js
-        
+//option--3
 
-        
+        const changeName = document.getElementById('place');
+        changeName.innerText = 'place to place-id';
+        // kono kichu name change kora jay us js
+
+       // selector of query
+       
+//option--4
+
+       const device=document.querySelectorAll('.device-container');
+       //console.log(device);
+       for(const devices of device){
+        console.log(devices.innerText);
+       }
+
+//option--5
+
+       //when we use just querySelector then just 1st element will show,and All show all element
+
 
     </script>
-    
+
 </body>
+
 </html>
