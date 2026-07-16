@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Of DOM(Document Object Model)</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to my DOM</h1>
+    </header>
+    <main>
+        <h1>My awesome DoM Profile</h1>
+        <ul>
+            <li>jalali</li>
+            <li>kalali</li>
+            <li>malali</li>
+            <li>koigeli</li>
+        </ul>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="js/dom.js"></script>
+
+    <script>
+        //akhane js and html er modhe relation stablish kore dom,dom html ke object hisab a rakhe and js diye amr segula kaj korte pari,
+        const h1tag=document.getElementsByTagName('h1');//all h1 tag
+        console.log(h1tag);
+
+        const licollection=document.getElementsByTagName('li');//all li tag collect korbe
+        for(const list of licollection){ //array like object ,not full array
+            console.log(list);//just show li tag
+            console.log(list.innerText);// show li text 
+        }
+
+
+    </script>
+    
+</body>
+</html>
