@@ -1,0 +1,8 @@
+we have to know
+1. document.getElementsByTagName('li');
+2. document.getElementById('place');
+3. document.getElementsByClassName('place-name');
+
+query selector
+
+4.document.querySelectorAll('#idname')//id diye collect
