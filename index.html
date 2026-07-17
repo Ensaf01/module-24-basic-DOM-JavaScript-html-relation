@@ -22,7 +22,7 @@
                 <li>koigeli</li>
             </ul>
         </section>
-        <section>
+        <section class="fruits-container">
             <h1 id="fruits-title">fruits name</h1>
             <ul>
                 <li>mango</li>
@@ -31,7 +31,7 @@
                 <li>banana</li>
             </ul>
         </section>
-        <section>
+        <section id="place-id" class="place-container">
             <h1 id="place">my like place</h1>
             <ul>
                 <li class="place-name">dhaka</li>
@@ -55,6 +55,7 @@
     </footer>
 
     <script src="js/dom.js"></script>
+    <script src="js/styleInJs.js"></script>
 
     <script>
 
@@ -69,7 +70,7 @@
             // console.log(list);//just show li tag
             //console.log(list.innerText);// show li text 
         }
-        
+
 //option--2
 
         const placeName = document.getElementsByClassName('place-name');
@@ -92,7 +93,7 @@
        const device=document.querySelectorAll('.device-container');
        //console.log(device);
        for(const devices of device){
-        console.log(devices.innerText);
+       // console.log(devices.innerText);
        }
 
 //option--5
