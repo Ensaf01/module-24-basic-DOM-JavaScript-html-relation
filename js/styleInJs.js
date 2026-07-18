@@ -12,3 +12,9 @@ for(const elements of sections){
 
 const place=document.getElementById('place-id');
 place.style.backgroundColor='yellow';
+place.style.display='flex';
+place.style.flexDirection='column';
+place.style.alignItems='center';
+//place.style.justifyContent='center';
+//place.style.justifyItems='center';//this is for grid
+
